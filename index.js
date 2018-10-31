@@ -3,6 +3,18 @@ function takeANumber (line,name) {
   return `Welcome, ${name}. You are number ${line.length} in line.`
 }
 
+let i = 0; 
+function takeANumberAlternate (line) {
+  
+  i++;
+  line.push(i); 
+  return `Your number ${i}`
+}
+
+function resetCounter () {
+  i = 0; 
+}
+
 function nowServing (line) {
   let phrase; 
   if(line.length === 0) {
