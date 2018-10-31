@@ -8,9 +8,8 @@ function nowServing (line) {
   if(line.length === 0) {
     phrase =  "There is nobody waiting to be served!"
   } else {
-    phrase = `Currently serving ${line[0]}.`;
-    line.shift();
-    }
+    phrase = `Currently serving ${line.shift()}.`;
+  }
   return phrase 
 }
 
